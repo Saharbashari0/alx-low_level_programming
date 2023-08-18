@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * print_triangle - Prints a triangle of square according parameter
- * @size: The size of the squares triangle
- * Return: empty
+ * print_triangle - Entry point
+ * Description: prints diagonals
+ * @size: The size of the triangle
+ * Return: void
  */
 
 void print_triangle(int size)
 
 {
-	int x, y, z;
+	int row, hashes, spaces;
 
 	if (size <= 0)
 	{
@@ -17,15 +18,15 @@ void print_triangle(int size)
 	}
 	else
 	{
-		for (x = 0; x < size; x++)
+		for (row = 1; row <= size; row++)
 		{
-			for (y = size - x; y > 1; y--)
+			for (space = size - row; space >= 1; space--)
 			{
-				_putchar(32);
+				_putchar(' ');
 			}
-			for (z = 0; z <= x; z++)
+			for (hashes = 1; hashes <= row; hashes++)
 			{
-				_putchar(35);
+				_putchar('#');
 			}
 			_putchar('\n');
 		}
