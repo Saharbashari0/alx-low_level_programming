@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <unistd.h>
+#include <stdlib>
 
 int _putchar(char c);
 char *_strcat(char *dest, char *src);
@@ -15,6 +16,7 @@ char *cap_string(char *a);
 char *leet(char *);
 char *rot13(char *a);
 void print_number(int n);
+int main(void);
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
 void print_buffer(char *b, int size);
 
