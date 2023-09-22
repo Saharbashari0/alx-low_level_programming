@@ -5,7 +5,7 @@
  * @head: address of pointer to head node
  * @str: str field of node
  *
- * return: size of list
+ * Return: size of list
  */
 list_t *add_node(list_t **head, const char *str)
 {
